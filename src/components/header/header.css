@@ -1,0 +1,107 @@
+.section-header {
+    /*position: absolute;*/
+    z-index: 10;
+    display: flex;
+    /*justify-content: space-between;*/
+    width: 100%;
+    /*padding: 42px 32px;*/
+}
+
+.header-nav-active-item {
+    font-family: AvenirLTStd-Black;
+    color: var(--site-blue-color);
+    text-transform: uppercase;
+    margin-left: auto;
+    margin-right: 80px;
+}
+
+@media only screen and (max-width: 1100px) {
+    .section-header {
+        padding: 20px;
+    }
+
+    .section-header svg {
+        width: 110px;
+        height: 20px;
+    }
+}
+
+@media only screen and (max-width: 700px) {
+    .header-nav-active-item {
+        display: none;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/*my css*/
+/*  */
+.section-container{
+    position: fixed;
+    width: 100%;
+    left: 0;
+    top: 0;
+    z-index: 9999;
+
+}
+
+
+.header-section {
+    display: flex;
+    align-items: center;
+    flex-flow: row nowrap;
+    justify-content: flex-start;
+    position: relative;
+    padding: .5rem 1rem;
+}
+
+.big-container{
+    display: flex;
+    position: relative;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1200px;
+    width: 100%;
+    padding: 0 15px;
+    margin: 0 auto;
+}
+
+.logo {
+    display: inline-flex;
+    vertical-align: middle;
+    align-items: center;
+    padding-top: .3125rem;
+    padding-bottom: .3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+}
+
+
+.header-section .software_banner_btn{
+    font-size: 14px;
+    margin-right: 20px;
+    padding: 8px 15px!important;
+    text-align: center;
+}
+
+.header_login_btn{
+    cursor: pointer;
+    display: block;
+    text-decoration: none;
+    outline: 0;
+    color: black;
+    font-size: 16px;
+}
+

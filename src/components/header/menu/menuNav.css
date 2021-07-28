@@ -1,0 +1,70 @@
+/*Menu*/
+.overlay-navigation {
+    display: flex!important;
+    flex-basis: auto;
+    flex-grow: 1;
+    align-items: center;
+}
+
+
+.overlay-navigation ul{
+    display: flex;
+    flex-basis: auto;
+    flex-grow: 1;
+    align-items: center;
+    padding-left: 50px ;
+}
+
+.overlay-navigation ul li{
+    position: relative;
+    padding-bottom: 35px;
+    padding-top: 35px;
+    cursor: pointer;
+}
+
+.dropdownMenu .subMenu {
+    display: none;
+    padding: 15px 20px;
+    min-width: 300px;
+    position: absolute;
+    left: -15px;
+    background: #fff;
+    box-shadow: 0 4px 20px rgb(0 0 0 / 10%);
+    border-radius: 6px;
+    margin: 10px 0 0 0;
+}
+
+.dropdownMenu .subMenu .nav-item .nav-link{
+    color: black;
+    display: inline-block;
+    position: relative;
+    transition: color .2s linear;
+    padding-right: .5rem!important;
+    padding-left: .5rem!important;
+}
+
+.menu-nav ul li:hover  a:before{
+        content: "";
+        height: 1px;
+        position: absolute;
+        bottom: 25px;
+        left: auto;
+        right: 0;
+        transition: all .2s linear;
+        color: #16ac59;
+        background-color: #16ac59;
+        width: 100%;
+
+}
+
+.menu-nav ul li:hover  a > span{
+    color: #16ac59;
+}
+
+
+
+.menu-nav-item{
+    padding: 0 10px;
+    color: #323537;
+    font-size: 16px;
+}

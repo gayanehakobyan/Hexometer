@@ -1,0 +1,74 @@
+{
+  "env": {
+    "browser": true,
+    "es6": true,
+    "node": true
+  },
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json",
+    "sourceType": "module"
+  },
+  "plugins": [
+    "@typescript-eslint"
+  ],
+  "rules": {
+    "indent": "off",
+    "eqeqeq": [
+      "error",
+      "smart"
+    ],
+    "no-label-var": "error",
+    "quotes": [
+      "error",
+      "double",
+      {"avoidEscape": true, "allowTemplateLiterals": true}
+    ],
+    "semi": [
+      "error",
+      "always"
+    ],
+    "id-match": "error",
+    "no-eval": "error",
+    "no-redeclare": "error",
+    "no-trailing-spaces": "error",
+    "no-var": "error",
+    "one-var": [
+      "error",
+      "never"
+    ],
+    "func-call-spacing": [
+      "error",
+      "never"
+    ],
+    "no-multiple-empty-lines": [
+      "error",
+      {
+        "max": 1,
+        "maxEOF": 0
+      }
+    ],
+    "space-infix-ops": "error",
+    "space-unary-ops": [
+      2,
+      {
+        "words": true,
+        "nonwords": false
+      }
+    ],
+    "keyword-spacing": [
+      "error",
+      {
+        "before": true,
+        "after": true
+      }
+    ],
+    "space-in-parens": [
+      "error",
+      "never"
+    ],
+    "@typescript-eslint/type-annotation-spacing": [
+      "error"
+    ]
+  }
+}
