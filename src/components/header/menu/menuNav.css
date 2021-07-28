@@ -6,7 +6,6 @@
     align-items: center;
 }
 
-
 .overlay-navigation ul{
     display: flex;
     flex-basis: auto;
@@ -60,8 +59,6 @@
 .menu-nav ul li:hover  a > span{
     color: #16ac59;
 }
-
-
 
 .menu-nav-item{
     padding: 0 10px;

@@ -3,7 +3,7 @@ import {Link} from "gatsby";
 import "./menuNav.css";
 
 
-function MenuNav(props)
+function MenuNav()
 {
     let [path, setPath] = React.useState<string>("");
     let solotionsItemsRref = React.useRef(null);
@@ -11,21 +11,16 @@ function MenuNav(props)
 
     React.useEffect(() =>
     {
-        // let params = new URLSearchParams(window.location.search.substring(1));
         setPath(window.location.pathname.split("/")[1] || "home");
  
     });
 
-
     const onMouseEnterHandler = () => {
-        console.log("asdfgh", )
-        if(solotionsItemsRref.current){
-            solotionsItemsRref.current.style.display = "block"
-        }
+      solotionsItemsRref.current.style.display = "block"
     }
 
     const onMouseLeaveHandler = () => {
-         solotionsItemsRref.current.style.display = "none"
+        solotionsItemsRref.current.style.display = "none"
     }
 
     return (
